@@ -22,6 +22,10 @@ namespace BankUjra
 
 		public abstract bool Withdraw(double amount); //azért abstract mert ha több osztály van és egy közös metódus kell, akkor az abstractot mindig kell majd implementálni
 		
+		public BankCard Newcard(int CardNumber)
+		{
+			return new BankCard(this.Owner, Balance, CardNumber);
+		}
 
 	}
 }
