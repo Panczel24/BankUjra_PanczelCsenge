@@ -63,8 +63,5 @@ namespace BankUjra
             }
             return osszeg;
         }
-
-
-
     }
 }
